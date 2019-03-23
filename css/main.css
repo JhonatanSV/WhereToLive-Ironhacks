@@ -1,0 +1,369 @@
+
+html{
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-height: 100%;
+  font-family: 'Muli', sans-serif;
+  padding: 20px;
+background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h2{
+  color:white;
+}
+
+#contenido{
+  margin:20px 0;
+}
+
+.titulo{
+  text-align:center;
+  font-weight:bold;
+  font-size:58px;
+  color: #2b5876;
+
+;
+  margin:50px 0;
+}
+
+#cont_graph::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#cont_graph{
+  width:100%;
+  height:800px;
+  margin:220px 0;
+
+}
+
+#cont_graph p{
+   content: '';
+  display: block;
+  clear: both;
+}
+
+ .graph{
+  width:100%;
+  height:500px;
+
+}
+.graph svg{
+  width:100%;
+  height:100%;
+}
+
+.p{
+  width:100%;
+  height:300px;
+  margin-bottom:120px;
+}
+
+
+
+@media (min-width:954px) {
+  #cont_graph{
+    height:500px;
+  }
+
+    .graph{
+      width:50%;
+      height:100%;
+      float:left;
+    }
+  .p{
+    width:50%;
+    float:right;
+    margin-bottom:150px;
+  }
+ #cont_graph::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+}
+
+..axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: orange;
+}
+
+.solidArc:hover {
+  fill: orangered ;
+}
+
+.solidArc {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.aster-score {
+  line-height: 1;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+nav a:hover {
+  background-color: #00b8e4;
+}
+
+.navegador nav {
+    padding: 1rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:768px) {
+    .navegador nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  .navegador {
+  background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+}
+.navegador nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+.navegador nav a:last-of-type {
+    margin-bottom:0;
+}
+@media (min-width:768px) {
+    .navegador nav a{
+        margin-bottom: 0;
+        color:white;
+
+    }
+}
+
+label{
+  text-align:center;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.container{
+  margin:30px 0;
+}
+
+.container_options{
+  margin:80px 10px 0px 0;
+  width:100%;
+
+}
+
+.container_options nav{
+  margin:30px 0;
+  width:100%;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width:768px) {
+ .container_options{
+  margin:80px 20px 0 0;
+  width:100%;
+
+}
+    .container_options nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+#mapviewcontainer{
+  margin: 10px;
+}
+#resulttop{
+  display : flex;
+align-items:center;
+justify-content : center;
+flex-direction : row;
+}
+.mapview{
+  margin: 0px;
+}
+#listmap h6{
+  display:inline;
+      margin-left: 10px;
+          margin-bottom: -12px;
+
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+#Table1Body tr:hover, #TabletopBody tr:hover{
+  background-color:#BCBEFA;
+  cursor:pointer;
+
+}
+
+
+
+table, th, td{
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+  color:black;
+}
+
+.featurette-heading{
+  margin:35px 0;
+  font-weight:bold;
+}
+
+.top3{
+  margin:35px 0;
+  font-weight:bold;
+}
+
+.menu1{
+  text-align:left;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 12px;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+rect:hover {  fill:blue; }
+.axis {  font: 10px sans-serif; }
+.legend tr{    border-bottom:1px solid grey; }
+.legend tr:first-child{    border-top:1px solid grey; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {  display: none; }
+.legend{
+    margin-bottom:76px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
